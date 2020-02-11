@@ -39,6 +39,10 @@
     overflow: hidden;
   }
   
+  a {
+    text-decoration: underline;
+  }
+
   #title {
     color: #b36200;
     text-shadow:#474e5d;
