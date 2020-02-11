@@ -1,0 +1,404 @@
+ body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #b36200	;
+    background-image: url(style/image/stars_trans2.png);
+    position: absolute;
+    z-index: -1;
+  }
+  
+/* #splashPage {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-clip-path: circle(54.4% at 50% 89%);
+            clip-path: circle(54.4% at 50% 89%);
+    background-image: url(https://mediacdn.bellacor.com/images/500/238801CU25955.jpg);
+    background-size: cover;
+            box-shadow: inset 0 0 10px white;
+    z-index: -1;
+    opacity: 0.7;
+  } */
+  
+  body .dome {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    overflow: hidden;
+  }
+  
+  #title {
+    color: #b36200;
+    text-shadow:#474e5d;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    /* border-top: solid 1px  #bd9360; */
+  }
+  
+  
+#title2 {
+    color: #b36200;
+    opacity: 0.7;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+.afterSplash{
+    box-shadow: inset  10px  #b36200;
+  }
+
+#name{
+    font-size: 40px;
+    color:white;
+}
+
+#headerIntro{
+    text-align: center;
+    font-family: serif;
+    color:#301f09;
+    font-size: 20px
+}
+
+#scroll{
+    text-align: center;
+    font-family: serif;
+    color:grey;
+    font-size: 15px;
+}
+  
+.header {
+    background: #474e5d;
+    box-shadow: inset 0 0 10px white;
+    /* border-bottom:5px solid white; */
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 80px;
+    padding-right:20px;
+    padding-top:20px;
+  }
+  
+.content {
+    padding: 16px;
+  }
+  
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+.sticky + .content {
+    padding-top: 102px;
+  }
+
+#home, #about, #projects, #contacts{
+    padding:20px;
+}
+
+.card{
+    float:left;
+}
+
+/* box catergories*/
+.box1{
+    float:left;
+    height:500px;
+    overflow:hidden;
+    position: relative;
+}
+
+.box2{
+    float:left;
+    overflow:hidden;
+    position: relative;
+    padding:0px;
+}
+.pics{
+    float:left;
+    height:500px;
+    width:500px;
+    padding:20px;
+    border:2px solid #474e5d;
+}
+
+.sns{
+    height:60px;
+    width:60px ;
+    padding:20px;
+}
+#email{
+    position:relative;
+}
+/* .sns{
+    float:left;
+    overflow:hidden;
+    position: relative;
+    padding:0px;
+}
+
+#email,#github, #linkedIn{
+    padding:30px;
+    font-family: sans-serif;
+    font-size: 30px;
+    text-align: right;
+    color: #301f09 ;
+} */
+
+/*descriptions*/
+.words{
+    padding-right:30px;
+    padding-left:30px;
+    padding-top:60px;
+    padding-bottom: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+h3{
+    color:#301f09 ;;
+    text-align:center;
+    font-family: serif;
+}
+
+.about{
+    float:left;
+}
+#personality{
+    height:300px;
+}
+
+#portfolio{
+    padding:20px;
+
+}
+
+.git{
+    text-align: center;
+}
+
+.langauge{
+    text-align: center;
+}
+
+.sectionTitle{
+    text-align:center;
+    font-size: 22px;
+    font-family: serif;
+    font-weight: bold;
+    color:black;
+}
+
+footer{
+    position:fixed;
+    bottom:0px;
+    text-align: center;
+    /* border-top:5px solid   #301f09 ; */
+    padding:30px;
+
+}
+
+
+
+/* TIMELINE */
+  
+  /* Set a background color */
+  #timeline {
+    background-color: #474e5d;
+    font-family: Helvetica, sans-serif;
+    position: relative;
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  
+  /* The actual timeline (the vertical ruler) */
+  #timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  /* Container around content */
+  .timelinebox {
+    padding: 5px;
+    position: relative;
+    background-color: inherit;
+    max-width:500px;
+  }
+  
+  /* The circles on the timeline */
+  .timelinebox::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* Place the timelinebox to the left */
+  .left {
+    right: 20.6%;
+  }
+  
+  /* Place the timelinebox to the right */
+  .right {
+    left: 20.5%;
+  }
+  
+  /* Add arrows to the left timelinebox (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  /* Add arrows to the right timelinebox (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  
+  /* The actual content */
+  .content {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+
+  }
+
+  @media only screen and (max-width: 640px) {
+    *{
+        overflow:auto;
+    }
+
+    #main{
+        margin-top:100vw;
+    }
+
+    .header {
+        position:fixed;
+        top:0;
+        float:left;
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 15px;
+        height: 50px;
+        padding-right:5px;
+        padding-top:12px;
+        z-index:3;
+        background: #f5e9dc;
+        box-shadow: inset 0 0 10px white;
+        text-align: center;
+      }
+
+
+      #title {
+        color: #bd9360;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: sans-serif;
+        text-align: center;
+        margin-top: 46%;
+        border-top: none;
+        
+      }
+
+
+      #timeline::after {
+        content: '';
+        position: absolute;
+        width: 0px;
+        background-color: transparent;
+        top: 0;
+        bottom: 0;
+        left: 0%;
+        margin-left: 0px;
+      }
+      .timelinebox::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -17px;
+        background-color: white;
+        border: 4px solid #FF9F55;
+        top: 15px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+
+        /* Place the timelinebox to the left */
+  .left {
+    right:0;
+  }
+  
+  /* Place the timelinebox to the right */
+  .right {
+    left: 0;
+  }
+    
+    #home, #about, #projects, #contacts{
+        padding:5px;
+    }
+
+    footer{
+        position:fixed;
+        bottom:0px;
+        text-align: center;
+        /* border-top:5px solid   #301f09 ; */
+    
+    }
+
+
+}
